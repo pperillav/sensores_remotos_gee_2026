@@ -90,6 +90,7 @@ A continuación se detallan los Asset IDs exactos utilizados en Google Earth Eng
 * **Densidad Poblacional (WorldPop):** `WorldPop/GP/100m/pop`. Estimación de distribución humana. Distribuye datos de censos oficiales mediante Machine Learning usando covariables espaciales. El píxel indica la cantidad estimada de habitantes en áreas de 100x100m.
 * **Huellas de Edificios (Open Buildings):** `GOOGLE/Research/open-buildings/v3/polygons`. Base de datos vectorial extraída por Inteligencia Artificial a partir de imágenes de muy alta resolución. Contiene los polígonos geométricos de las construcciones.
 * **Luces Nocturnas (BlackMarble):** `NOAA/VIIRS/DNB/MONTHLY_V1/VCMSLCFG`. Emisión lumínica nocturna capturada por el sensor VIIRS, útil para detectar áreas urbanas.
+
 ---
 
 # Parte 2: Diccionario de funciones GEE
