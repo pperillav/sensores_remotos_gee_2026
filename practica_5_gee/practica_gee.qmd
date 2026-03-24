@@ -40,6 +40,18 @@ La interoperabilidad mediante *Asset IDs* y objetos serializados (JSON) permite 
 :::
 
 ---
+# Objetivos
+
+## Objetivo general
+Analizar y procesar imágenes satelitales mediante Google Earth Engine (GEE), integrando datos multiesensor para la caracterización biofísica del territorio.
+
+## Objetivos específicos
+- Identificar y describir las principales fuentes de datos satelitales disponibles en GEE.
+- Aplicar filtros espaciales y temporales para la selección de imágenes.
+- Integrar datos procesados en plataformas SIG como QGIS y ArcGIS Pro.
+- Interpretar índices espectrales como el NDVI en función de su significado físico.
+
+---
 
 # Parte 1: Ficha técnica de insumos
 
@@ -180,6 +192,13 @@ Esta ecuación matemática normalizada arroja valores que oscilan estrictamente 
 * **Vegetación fotosintéticamente activa (Ej. Parque El Salitre):** Los pigmentos de las hojas (clorofila) absorben masivamente la luz visible, especialmente en la banda del **Rojo**, para realizar la fotosíntesis. Simultáneamente, la estructura celular interna (el mesófilo esponjoso) refleja fuertemente la luz **Infrarroja Cercana (NIR)** para evitar el sobrecalentamiento de la planta. Al tener un $NIR$ muy alto y un $Rojo$ muy bajo, el numerador de la ecuación se maximiza, arrojando valores fuertemente positivos (usualmente entre **0.6 y 0.9**).
 * **Áreas urbanas (concreto, asfalto y suelo desnudo):** Los materiales de construcción y los suelos secos o estériles presentan una reflectancia muy similar tanto en la banda del Rojo como en el NIR. Al ser valores casi idénticos ($NIR \approx Rojo$), la resta en el numerador tiende a cero, resultando en un índice con valores cercanos a **0**.
 * **Cuerpos de agua y sombras profundas:** El agua pura es un absorbente casi perfecto de la radiación infrarroja, pero refleja una ligera porción de la luz visible. En este escenario físico, la reflectancia del Rojo supera a la del Infrarrojo Cercano ($NIR < Rojo$), haciendo que la resta en el numerador sea negativa y, en consecuencia, el índice arroje valores **menores a 0**.
+
+# Conclusiones
+
+- Google Earth Engine permite el procesamiento eficiente de grandes volúmenes de datos sin requerir alta capacidad computacional local.
+- La integración entre GEE y SIG de escritorio facilita el análisis espacial y la generación de productos cartográficos.
+- Los sensores remotos ofrecen diferentes ventajas según su naturaleza (ópticos vs radar), por lo que su uso combinado es fundamental.
+- El NDVI es una herramienta robusta para la identificación de vegetación, aunque debe interpretarse considerando sus limitaciones.
 
 # Referencias Bibliográficas 
 
