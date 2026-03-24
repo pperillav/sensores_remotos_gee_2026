@@ -40,6 +40,7 @@ La interoperabilidad mediante *Asset IDs* y objetos serializados (JSON) permite 
 :::
 
 ---
+
 # Objetivos
 
 ## Objetivo general
